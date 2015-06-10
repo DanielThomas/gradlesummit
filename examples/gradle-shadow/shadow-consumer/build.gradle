@@ -1,0 +1,15 @@
+plugins {
+  id 'java'
+}
+
+repositories {
+  jcenter()
+  mavenLocal()
+}
+
+dependencies {
+  compile 'junit:junit:4.12'
+  compile('com.netflix.buildtools:shadow-client:1.0.0-SNAPSHOT:all') {
+    transitive = false
+  }
+}

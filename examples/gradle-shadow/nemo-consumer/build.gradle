@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+repositories {
+  maven { url 'http://localhost:7001' }
+  jcenter()
+}
+
+dependencies {
+  compile 'com.google.guava:guava:14.0'
+  compile 'junit:junit:4.12'
+  compile 'com.netflix.buildtools:nemo-seam-core:1'
+  compile 'com.netflix.buildtools:shadow-client_module:1.0.0-SNAPSHOT'
+}
